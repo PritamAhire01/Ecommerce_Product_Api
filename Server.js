@@ -1,5 +1,6 @@
 import express from "express";
-import path from "path";
+
+import cors from 'cors'
 const app = express();
 import dotenv from "dotenv";
 import { DatabaseConnection } from "./Database/Database.js";
@@ -12,11 +13,13 @@ import { PocketmachineRouter } from "./Routers/PocketMachineRoute.js";
 import { NightWearRouter } from "./Routers/NightWearsData.js";
 import { MerchantRouter } from "./Routers/MerchantRouter.js";
 
+
 dotenv.config();
 await DatabaseConnection();
 const port = process.env.Port || 8000;
 
 // Middleware
+app.use(cors())
 app.use(express.json());
 app.use(Router)
 app.use(WomensRouter)
