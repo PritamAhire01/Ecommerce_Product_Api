@@ -1,30 +1,37 @@
 🛒 Ecommerce Product API
 
-A clean and scalable RESTful API built with Node.js, Express, and MongoDB.
-This service provides essential product management features for ecommerce applications.
+A simple and scalable RESTful API built with Node.js, Express, and MongoDB, designed to deliver product collections for ecommerce applications.
 
-🔗 API Access
+🔗 Live API Access (Render Hosted)
+Base URL
 
-If your API is deployed, you can place the link here:
+Your base Render URL is active but does not show a homepage — this is normal:
 
-👉 Base URL: https://your-deployed-api-link.com
-(Leave this blank if you haven’t deployed yet.)
+https://ecommerce-product-api-1-u30v.onrender.com
 
+
+Render will not show anything unless you add a specific endpoint.
+
+Working Endpoints
+
+You must use one of the available API collection routes:
+
+Collection	Endpoint
+Womens Wear Collection	https://ecommerce-product-api-1-u30v.onrender.com/WomensWearCollcetion
+Night Wear Collection	https://ecommerce-product-api-1-u30v.onrender.com/NightWear
+Skin Care Products	https://ecommerce-product-api-1-u30v.onrender.com/SkinCare
+Glasses Product Night Wear	https://ecommerce-product-api-1-u30v.onrender.com/GlassesProductNightWear
 ✨ Features
 
-RESTful product endpoints
-
-Create, read, update, delete (CRUD) operations
+REST API serving multiple product collections
 
 MongoDB + Mongoose schema modeling
 
-Clean error handling
+Organized Express routing
 
-Secure middleware setup (CORS, Helmet, etc.)
+Secure middleware configuration (CORS, Helmet, etc.)
 
-Simple and scalable folder architecture
-
-Note: Image uploads (Cloudinary or storage service) are not implemented yet.
+Scalable and easy to extend
 
 🧰 Tech Stack
 
@@ -38,16 +45,16 @@ Mongoose
 
 Dotenv
 
-📂 Project Structure
+📁 Project Structure
 Ecommerce_Product_Api/
 │
 ├── src/
-│   ├── config/          # Database connection & environment config
-│   ├── controllers/     # Business logic handlers
-│   ├── routes/          # API routes
-│   ├── models/          # MongoDB models
-│   ├── middlewares/     # Error handling & validation
-│   └── server.js        # Application entry point
+│   ├── config/          
+│   ├── controllers/     
+│   ├── routes/          
+│   ├── models/          
+│   ├── middlewares/     
+│   └── server.js        
 │
 ├── .env
 ├── package.json
@@ -60,10 +67,10 @@ npm install
 
 🔧 Environment Variables
 
-Create a .env file:
+Inside .env:
 
 PORT=5000
-MONGO_URI=your-mongodb-uri
+MONGO_URI=your-mongo-connection-string
 
 ▶️ Run the Server
 Development
@@ -72,29 +79,26 @@ npm run dev
 Production
 npm start
 
-📘 API Endpoints
-/api/products
-Method	Description
-GET	Fetch all products
-GET /id	Fetch a single product
-POST	Create a new product
-PUT /id	Update a product
-DELETE /id	Delete a product
+📘 Available API Routes
+Method	Route	Description
+GET	/WomensWearCollcetion	Get all women’s wear items
+GET	/NightWear	Get nightwear products
+GET	/SkinCare	Get skincare items
+GET	/GlassesProductNightWear	Get glasses / nightwear accessories
+
+Note: No images are uploaded to Cloudinary yet. Image endpoints are not included.
+
 🔮 Future Improvements
 
-Add image upload support (Cloudinary or other service)
+Add image uploads (Cloudinary / S3)
 
 Add authentication (JWT)
 
-Add product filtering, sorting, pagination
+Add pagination & searching
 
 Add Swagger documentation
 
-Add deployment setup (Docker, CI/CD)
-
-🤝 Contributing
-
-Contributions and suggestions are welcome!
+Add Docker + CI/CD pipeline
 
 📄 License
 
