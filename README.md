@@ -20,7 +20,8 @@ Collection	Endpoint
 Womens Wear Collection	https://ecommerce-product-api-2.onrender.com/WomensWearCollcetion
 Night Wear Collection	https://ecommerce-product-api-2.onrender.com/NightWear
 Skin Care Products	https://ecommerce-product-api-2.onrender.com/SkinCare
-Glasses Product Night Wear	https://ecommerce-product-api-2.onrender.com/GlassesProductNightWear
+Glasses Product 	https://ecommerce-product-api-2.onrender.com/GlassesProduct
+NightWears Product 	https://ecommerce-product-api-2.onrender.com/NightWear
 ✨ Features
 
 REST API serving multiple product collections
