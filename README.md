@@ -7,7 +7,7 @@ Base URL
 
 Your base Render URL is active but does not show a homepage — this is normal:
 
-https://ecommerce-product-api-1-u30v.onrender.com
+https://ecommerce-product-api-2.onrender.com
 
 
 Render will not show anything unless you add a specific endpoint.
@@ -17,10 +17,10 @@ Working Endpoints
 You must use one of the available API collection routes:
 
 Collection	Endpoint
-Womens Wear Collection	https://ecommerce-product-api-1-u30v.onrender.com/WomensWearCollcetion
-Night Wear Collection	https://ecommerce-product-api-1-u30v.onrender.com/NightWear
-Skin Care Products	https://ecommerce-product-api-1-u30v.onrender.com/SkinCare
-Glasses Product Night Wear	https://ecommerce-product-api-1-u30v.onrender.com/GlassesProductNightWear
+Womens Wear Collection	https://ecommerce-product-api-2.onrender.com/WomensWearCollcetion
+Night Wear Collection	https://ecommerce-product-api-2.onrender.com/NightWear
+Skin Care Products	https://ecommerce-product-api-2.onrender.com/SkinCare
+Glasses Product Night Wear	https://ecommerce-product-api-2.onrender.com/GlassesProductNightWear
 ✨ Features
 
 REST API serving multiple product collections
@@ -60,24 +60,11 @@ Ecommerce_Product_Api/
 ├── package.json
 └── README.md
 
-⚙️ Installation
-git clone https://github.com/<your-username>/Ecommerce_Product_Api.git
-cd Ecommerce_Product_Api
-npm install
+Clone the git and Then open in you directory and Install Everythin with
+"npm install" -- command
 
-🔧 Environment Variables
-
-Inside .env:
-
-PORT=5000
-MONGO_URI=your-mongo-connection-string
-
-▶️ Run the Server
-Development
-npm run dev
-
-Production
-npm start
+To Run the Server:
+Go with -> "nodemon Server.js"
 
 📘 Available API Routes
 Method	Route	Description
